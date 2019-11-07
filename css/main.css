@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+p {
+    font-weight: 700;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+/* Navigation Navbar */
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#nav-bar .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#nav-bar {
+    background: #fff;
+    border: none;
+}
+
+#nav-bar .navbar-brand img {
+    height: 80px;
+    padding-left: 30px;
+}
+
+#nav-bar ul li {
+    padding: 0 10px;
+}
+
+#nav-bar ul li a {
+    float: left;
+    text-align: left;
+    color: #099e9e;
+    font-weight: 700;
+    font-size: 17px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+#nav-bar ul li a:hover {
+    color: #0d8c8c!important;
+}
+
+#nav-bar .navbar-toggler {
+    border: none!important;
+}
+
+/* End Navigation Navbar */
+
+/* Slide Header */
+
+.slider-header #slider .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+
+.slider-header #slider .carousel-caption h5 {
+    font-size: 40px;
+}
+
+/* End Slide Header */
+
+/* about */
+
+#about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #088585;
+}
+
+#about a {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Nanum Myeongjo', serif;
+    background: #099e9e;
+    border-color: #099e9e;
+}
+
+#about .about-content {
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+#about .skills-bar p {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+#about .skills-bar .progress {
+    border-radius: 16px!important;
+    margin-bottom: 20px;
+}
+
+#about .skills-bar .progress-bar {
+    border-radius: 16px;
+}
+
+/* End About */
+
+/* Services */
+
+#services {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url('../images/services.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff!important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#services h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#services h2::after {
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 120px;
+    margin: 20px auto 5px;
+}
+
+#services h4 {
+    padding: 10px 0px;
+}
+
+#services p {
+    font-weight: normal;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+#services .services {
+    margin-top: 40px;
+}
+
+#services .services .icon {
+    font-size: 50px;
+    margin: 10px auto;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+} 
+
+#services .services .icon .fa-bootstrap {
+    color: #563e7c;
+}
+
+#services .services .icon .fa-laravel {
+    color: #ff2d20;
+}
+
+#services .services .icon .fa-adobe {
+    color: #fd0000;
+}
+
+#services .services .icon .fa-sass {
+    color: #be4080;
+}
+
+.services .col-md-3:hover {
+    background: #088585;
+    cursor: pointer;
+    transition: 0.8s;
+    border-radius: 6px;
+}
+
+/* End Services */
+
+/* Testimonials */
+
+#testimonials {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #888;
+}
+
+#testimonials h2 {
+    text-align: center;
+    color: #088585!important;
+    padding-bottom: 10px;
+}
+
+#testimonials h2::after {
+    content: '';
+    background: #088585;
+    display: block;
+    height: 3px;
+    width: 120px;
+    margin: 20px auto 5px;
+}
+
+#testimonials p {
+    padding-bottom: 20px;
+}
+
+#testimonials .profile-pic .img-box {
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+#testimonials .profile-pic .img-box img {
+    filter: grayscale(1);
+    border-radius: 50%;
+}
+
+#testimonials .profile-pic .img-box img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+#testimonials .profile-pic h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+#testimonials .profile-pic h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+#testimonials .profile-pic .img-box .fab {
+    height: 25px;
+    width: 25px;
+    color: #088585!important;
+    background: #fff;
+    padding: 4px 2px;
+    border-radius: 50px;
+}
+
+#testimonials .profile-pic .img-box ul {
+    padding: 15px 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+#testimonials .profile-pic .img-box ul li {
+    padding: 5px;
+    display: inline-block;
+}
+
+#testimonials .profile-pic .img-box:hover ul {
+    opacity: 1;
+}
+
+.img-box ul, .img-box ul li {
+    transition: 0.6s;
+}
+
+/* End Tesimonials */
+
+/* Footer */
+
+#footer {
+    background: #fff;
+    color: #088585!important;
+    font-size: 19px;
+    text-align: center;
+}
+
+/* End Footer */
+
+.bg-info {
+    background-color: #099e9e!important;
+}
